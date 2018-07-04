@@ -1,15 +1,30 @@
 {
   "name": "express-router-group",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Create route groups in expressjs",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest --watch"
   },
   "keywords": [
     "express",
     "router"
   ],
+  "jest": {
+    "testEnvironment": "node",
+    "testPathIgnorePatterns": [
+      "<rootDir>/(lib|build|docs|node_modules)/"
+    ],
+    "coveragePathIgnorePatterns": [
+      "<rootDir>/(node_modules|server/db/(migrations|seeds))/"
+    ]
+  },
+  "devDependencies": {
+    "chai": "4.1.2",
+    "jest": "21.2.0",
+    "sinon": "4.0.1",
+    "express": "^4.15.5"
+  },
   "peerDependencies": {
     "express": "^4.15.5"
   },
