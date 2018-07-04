@@ -1,6 +1,6 @@
 {
   "name": "express-router-group",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "Create route groups in expressjs",
   "main": "index.js",
   "scripts": {
@@ -28,6 +28,11 @@
   "peerDependencies": {
     "express": "^4.15.5"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/santimendoza/express-router-group.git"
+  },
+  "url": "https://github.com/santimendoza/express-router-group.git",
   "author": "Santiago Mendoza Ramirez",
   "license": "ISC"
 }
