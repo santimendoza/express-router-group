@@ -14,10 +14,10 @@ express.Router.group = function(arg1, arg2, arg3) {
     handlerFunction = arg2;
   }
   const router = express.Router();
-  handlerFunction(router);
   if (middleware) {
-    this.use(middleware);
+    router.use(middleware);
   }
+  handlerFunction(router);
   this.use(path, router);
   return this;
 };
