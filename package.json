@@ -1,6 +1,6 @@
 {
   "name": "@santimendoza/express-router-group",
-  "version": "0.1.5",
+  "version": "0.1.5-beta.1",
   "description": "Create route groups in expressjs",
   "main": "index.js",
   "types": "types/express-router-group.d.ts",
