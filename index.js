@@ -13,7 +13,7 @@ express.Router.group = function(arg1, arg2, arg3) {
     path = arg1;
     handlerFunction = arg2;
   }
-  const router = express.Router();
+  const router = express.Router({mergeParams: true});
   if (middleware) {
     router.use(middleware);
   }
